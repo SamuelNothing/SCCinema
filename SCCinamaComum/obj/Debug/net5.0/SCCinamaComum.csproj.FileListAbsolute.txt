@@ -1,0 +1,15 @@
+D:\SCCinema\SCCinamaComum\bin\Debug\net5.0\SCCinamaComum.deps.json
+D:\SCCinema\SCCinamaComum\bin\Debug\net5.0\SCCinamaComum.runtimeconfig.json
+D:\SCCinema\SCCinamaComum\bin\Debug\net5.0\SCCinamaComum.runtimeconfig.dev.json
+D:\SCCinema\SCCinamaComum\bin\Debug\net5.0\SCCinamaComum.dll
+D:\SCCinema\SCCinamaComum\bin\Debug\net5.0\ref\SCCinamaComum.dll
+D:\SCCinema\SCCinamaComum\bin\Debug\net5.0\SCCinamaComum.pdb
+D:\SCCinema\SCCinamaComum\obj\Debug\net5.0\SCCinamaComum.csprojAssemblyReference.cache
+D:\SCCinema\SCCinamaComum\obj\Debug\net5.0\SCCinamaComum.GeneratedMSBuildEditorConfig.editorconfig
+D:\SCCinema\SCCinamaComum\obj\Debug\net5.0\SCCinamaComum.AssemblyInfoInputs.cache
+D:\SCCinema\SCCinamaComum\obj\Debug\net5.0\SCCinamaComum.AssemblyInfo.cs
+D:\SCCinema\SCCinamaComum\obj\Debug\net5.0\SCCinamaComum.csproj.CoreCompileInputs.cache
+D:\SCCinema\SCCinamaComum\obj\Debug\net5.0\SCCinamaComum.dll
+D:\SCCinema\SCCinamaComum\obj\Debug\net5.0\ref\SCCinamaComum.dll
+D:\SCCinema\SCCinamaComum\obj\Debug\net5.0\SCCinamaComum.pdb
+D:\SCCinema\SCCinamaComum\obj\Debug\net5.0\SCCinamaComum.genruntimeconfig.cache
