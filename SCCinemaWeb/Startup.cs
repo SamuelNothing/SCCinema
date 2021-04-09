@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Server.IISIntegration;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -29,7 +30,16 @@ namespace SCCinemaWeb
 
             services.AddMvc();
 
-            var connection = @"Server=(localdb)\mssqllocaldb;Database=AspCore_NovoDB;Trusted_Connection=True;";
+            services.AddDistributedMemoryCache();
+
+            services.AddSession(option =>
+            {
+                option.IdleTimeout = TimeSpan.FromSeconds(30);
+                option.Cookie.HttpOnly = true;
+                option.Cookie.IsEssential = true;
+            });
+
+            var connection = @"Server=(localdb)\mssqllocaldb;Database=SCCinema;Trusted_Connection=True;";
             services.AddDbContext<SCCinemaContext>(options => options.UseSqlServer(connection));
 
         }
@@ -53,6 +63,8 @@ namespace SCCinemaWeb
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseSession();
 
             app.UseEndpoints(endpoints =>
             {

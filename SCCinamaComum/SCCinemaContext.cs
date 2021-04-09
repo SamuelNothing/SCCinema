@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.EntityFramework;
+using Microsoft.EntityFrameworkCore;
 using SCCinamaComum.Models;
 using System;
 using System.Collections.Generic;
@@ -11,7 +13,12 @@ namespace SCCinamaComum
 {
     public class SCCinemaContext : DbContext
     {
+        private readonly RoleManager<IdentityRole> _roleManager;
         public SCCinemaContext(DbContextOptions<SCCinemaContext> options) : base(options)
+        {
+        }
+
+        public SCCinemaContext()
         {
         }
 
